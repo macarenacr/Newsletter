@@ -1,3 +1,78 @@
+:root {
+  /* Action */
+    --bs-action900: #110081;
+    --bs-action700: #0028C7;
+    --bs-action500: #0033FF;
+    --bs-action300: #B6D3FE;
+    --bs-action100: #2195f41a;
+    --bs-action50: #2195f480;
+    /* Accent */
+    --bs-accent900: #004F41;
+    --bs-accent700: #00874D;
+    --bs-accent500: #03CC54;
+    --bs-accent300: #A1F7A1;
+    --bs-accent100: rgb(0 221 49/.010);
+    /* Terciary */
+    --bs-terciary900: #B83700;
+    --bs-terciary700: #FF4D00;
+    --bs-terciary500: #FAA163;
+    --bs-terciary300: #FAD6BD;
+    --bs-terciary100: #f874181a;
+    /* Neutral */
+--bs-neutral900: #171717;
+--bs-neutral800: #242424;
+--bs-neutral700: #363636;
+--bs-neutral600: #4F4F4F;
+--bs-neutral500: #6E6E6E;
+--bs-neutral400: #9C9C9C;
+--bs-neutral300: #D4D4D4;
+--bs-neutral200: #EDEDED;
+--bs-neutral100-light: #d2d2d233;
+--bs-neutral100: #F4F4F4;
+--bs-neutral50-light: #d2d2d21a;
+--bs-neutral50: #FAFAFA;
+--bs-neutralWhite: #FFFFFF;
+/* Type Colo */
+--bs-typeColor900: #1F2534;
+--bs-typeColor700: #3A3F4A;
+--bs-typeColor500: #555962;
+--bs-typeColor300: #8D9096;
+--bs-typeColor100: #C7C9CC;
+/* Semantic */
+--bs-error700: #B80000;
+--bs-error500: #FF4646;
+--bs-error300: #FFADAD;
+--bs-error100: #FFF0F0;
+--bs-warning700:#98600B;
+--bs-warning500:#EED469;
+--bs-warning300:#F3E196;
+--bs-warning100:#FFF4C7;
+--bs-succes700:#2F5A11;
+--bs-succes500:#448319;
+--bs-succes300:#A1CE83;
+--bs-succes100:#EBFBDF;
+--bs-info700:#18628B;
+--bs-info500:#319EDB;
+--bs-info300:#8AC8EB;
+--bs-info100:#E5F3FA;
+--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    ;
+    /* Typography */
+    --font-6XL: 2.625rem;
+    --font-5XL: 2rem;
+    --font-4XL: 2rem;
+    --font-3XL: 2rem;
+    --font-2XL: 2rem;
+    --font-XL: 2rem;
+    --font-L: 2rem;
+    --font-M: 2rem;
+    --font-S: 2rem;
+    --font-XS: 2rem;
+    --font-2XS: 2rem;
+}
 * {
   box-sizing: border-box;
 }
@@ -21,4 +96,61 @@ nav ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+}
+.header{
+  background-color:var(--bs-accent700);
+  color: var(--bs-neutral200);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.h1{
+  color: var(--bs-action900);
+font-size: var(--font-6XL);
+}
+.presentacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.section2{
+  display: flex;
+  padding-inline: 64px;
+  gap: 32px;
+  margin-bottom: 2rem;
+}
+.descriptions{
+  display: flex;
+  flex-direction: column;
+  width:1500px
+  
+}
+.colorDescriptions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #80a6a3;
+  color:var(--bs-neutral900);
+  text-align: center;
+  padding-inline: 24px;
+  background-color: var(--bs-accent300);
+  margin-bottom: 2rem;
+}
+.footer{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bs-typeColor300);
+ margin-top: auto;
+  bottom: 0;
 }
